@@ -24,7 +24,15 @@ setup instructions.
 git clone REPO_URL
 ```
 
-### 2. Build and start the development containers
+### 2. Setup environment configuration
+
+You may set up your environment variables by creating a file `.env` in your project root.
+You may copy the file `.env.example` and define your own values for the informed variables.
+
+Please remember to update the Spring Boot configuration `.yml` files at `src/main/resources/`
+accordingly.
+
+### 3. Build and start the development containers
 
 The following command will download the required images, prepare, and start the development
 containers. The command will run in the background.
@@ -54,19 +62,19 @@ chmod +x ric.sh
 
 We will use the `ric.sh` script in the following examples.
 
-### 3. Test the application (optional)
+### 4. Test the application (optional)
 
 ```sh
 sh ric.sh mvn clean test
 ```
 
-### 4. Install the application
+### 5. Install the application
 
 ```sh
 sh ric.sh mvn clean install
 ```
 
-### 4. Start the application
+### 6. Start the application
 
 ```sh
 sh ric.sh mvn spring-boot:run
