@@ -10,6 +10,5 @@ spring:
       hibernate:
         jdbc:
           time_zone: "UTC"
-        ddl-auto: "update"
-        dialect: "org.hibernate.dialect.MySQLDialect"
-        current_session_context_class: "org.springframework.orm.hibernate5.SpringSessionContext"
+    hibernate:
+      ddl-auto: "update"
